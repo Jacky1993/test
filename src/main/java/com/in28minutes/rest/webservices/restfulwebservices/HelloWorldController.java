@@ -15,13 +15,13 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/")
 	public String imUpAndRunning() {
-		return "{healthy:true}";
+		return "{healthy:true latest}";
 	}
 
 	
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
-		return "Hello World " + " Vgg gggggggggggggggggggggggggggg " + service.retrieveInstanceInfo();
+		return "Hello World " + " Vgg latest " + service.retrieveInstanceInfo();
 	}
 
 	@GetMapping(path = "/hello-world-bean")
